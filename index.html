@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Clock-Todo-Weather</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app_username js-username">
+        <form class="username_form js-userform">
+          <input
+            type="text"
+            class="username_input"
+            placeholder="What's your name?"
+          />
+        </form>
+      </div>
+      <div class="app_title">
+        <div class="title_wrapper">
+          <span class="title_clock">Clock</span>
+          <span class="title_todo">Todo</span>
+          <span class="title_weather">Weather</span>
+        </div>
+      </div>
+      <div class="app_clock js-clock">
+        <div class="clock_wrapper">
+          <div class="js-days"></div>
+          <div class="js-time"></div>
+        </div>
+      </div>
+      <div class="app_location js-location"></div>
+      <div class="app_weather js-weather">
+        <div class="weather_info js-weather-info"></div>
+      </div>
+      <div class="app_todo js-todo">
+        <form class="js-taskForm">
+          <input type="text" class="js-taskInput" placeholder="Add task" />
+        </form>
+        <div class="todo_wrapper">
+          <div class="todo_title">Pending</div>
+          <ul class="todo_list js-pending"></ul>
+        </div>
+        <div class="todo_wrapper">
+          <div class="todo_title">Finished</div>
+          <ul class="todo_list js-finished"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/bg.js"></script>
+    <script src="src/name.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>

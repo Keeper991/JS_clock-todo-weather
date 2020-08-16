@@ -1,0 +1,92 @@
+@import "reset.css";
+@import "bg.css";
+@import "weather.css";
+@import "name.css";
+@import "clock.css";
+@import "todo.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: inherit;
+  border-style: none;
+  border-bottom: 3px solid #4fcef5;
+  text-align: center;
+}
+
+input:active,
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#app {
+  display: grid;
+  width: 90%;
+  height: 80%;
+  grid-template:
+    "username username username title title" 1fr
+    "clock location weather title title" 1fr
+    "todo todo todo todo todo" 2fr;
+  grid-gap: 5%;
+  color: white;
+}
+
+#app > * {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app_username {
+  grid-area: username;
+}
+
+.app_title {
+  grid-area: title;
+}
+
+.app_clock {
+  grid-area: clock;
+}
+
+.app_location {
+  grid-area: location;
+}
+
+.app_weather {
+  grid-area: weather;
+}
+
+.app_todo {
+  grid-area: todo;
+}
+
+.app_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+.title_wrapper > span:first-letter {
+  font-weight: 700;
+  color: #4fcef5;
+}

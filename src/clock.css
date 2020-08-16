@@ -1,0 +1,14 @@
+.app_clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock_wrapper {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
