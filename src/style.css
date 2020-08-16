@@ -22,6 +22,7 @@ input {
   border-style: none;
   border-bottom: 3px solid #4fcef5;
   text-align: center;
+  color: #ffffff;
 }
 
 input:active,
@@ -30,7 +31,7 @@ input:focus {
 }
 
 input::placeholder {
-  color: white;
+  color: #aaaaaa;
 }
 
 #app {
