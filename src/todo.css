@@ -28,6 +28,7 @@
 
 .todo_list {
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .todo_list button {
