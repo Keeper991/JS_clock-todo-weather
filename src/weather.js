@@ -13,7 +13,7 @@ function printWeather(weatherObj) {
 
   const weather = document.querySelector(`.${WEATHER_CN}`);
   const icon = new Image();
-  icon.src = `http://openweathermap.org/img/wn/${weatherObj.weather.icon}.png`;
+  icon.src = `https://openweathermap.org/img/wn/${weatherObj.weather.icon}.png`;
   weather.prepend(icon);
 
   const desc = document.createElement("div");
